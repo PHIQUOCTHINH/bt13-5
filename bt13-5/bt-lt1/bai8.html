@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="choi()">PLAY</button>
+</body>
+</html>
+<script>
+    function choi() {
+        let a = parseInt(prompt("Phạm vi đoán"))
+        let b = Math.floor(Math.random() * a)
+        alert(b)
+        let check = false
+    for (dem=1;dem<4;dem++){
+        let doan = parseInt(prompt("Số bạn đoán"))
+        if (b === doan) {
+           check= true;
+            break;
+        } if (doan>b){
+           check=false
+                }
+            }
+ if (check) {
+     document.write("Nhập đúng rồi đấy")
+ } else {
+     document.write("Nghỉ chơi")
+ }
+
+    }
+</script>

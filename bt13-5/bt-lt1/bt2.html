@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let enter = parseInt(prompt("Nhập vào nhiệt độ"))
+  if (enter >20&&enter<100){
+      document.write("Nhiệt độ là"+ enter)
+  }
+while (enter<20){
+      alert("Lạnh quá tăng nhiệt độ lên")
+    enter = +prompt("NHập lại vào")
+    document.write("Nhiệt độ là"+ enter)
+}
+    while (enter>100){
+        alert("Nóng quá giảm nhiệt độ đi")
+        enter = +prompt("NHập lại vào")
+        document.write("Nhiệt độ là"+ enter)
+    }
+</script>
+</body>
+</html>
